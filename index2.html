@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    p{
+        color: honeydew;
+    }
+    body{
+        background-color: black;
+    }
+    .main-heading{
+        font-size: 100px;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .custom-btn {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+ text-decoration: none;
+ color: inherit;
+ color: white;
+}
+a:hover{
+    background-color: honeydew;
+    text-decoration-color: honeydew;
+    color: black;
+}
+.tiers{
+    font-size: 50px;
+    color:white;
+}
+.bar{
+    background-color:black;
+}
+.tinderplus{
+    height: 50vh;
+    
+}
+</style>
+<body>
+    <nav class="bar d-flex p-2 justify-content-between align-items-center border border-top-0 border-dark">
+            <div class="d-flex align-items-end ">
+                <a href="index.html"><img style="width: 150px;" src="data:image/png;base64,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"alt=""></a>
+                <a class="a p-2 mb-4">Products</a>
+                <a class="p-2 mb-4">Learn</a>
+                <a class="p-2 mb-4">Safety</a>
+                <a class=" p-2 mb-4">Support</a>
+                <a class="p-2 mb-4">Download</a>
+
+
+                
+            </div>
+            <div>
+                <button class="btn btn-light btn-rounded mt-3 custom-btn "style="margin:5px">language</button>
+                <button class="btn btn-dark btn-rounded mt-3 custom-btn "style="margin:5px">log in</button>
+            </div>
+            
+            
+            
+    
+
+
+
+    </nav>
+    <div class="p-2  d-flex flex-column align-items-center mt-2 mb-5 ">
+        <p class="tiers fw-bold fst-italic">subscription Tiers</p>
+        <p>upgrade to Plus,Gold,or Platinum for enhanced tinder experiennce</p>    
+    </div>
+    <div class="d-flex flex-row pt-5 gap-5 justify-content-between align-items-center ">
+        <div class="container p-2 border border-secondary border-4 rounded" style="height: 370px; background-color: #111418; color: white">
+            <img src="tinder-plus-logo.png" alt="">
+            <ul class="fs-5">
+                <li> Unlimited Likes</li>
+                <li>Unlimited Rewinds</li>
+                <li>Passport to any Location</li>
+                <li>Hide Advertisements</li>
+                <li>Go Incognito</li>
+            
+            </ul>
+
+
+        </div>
+        <div class="container p-2 border border-secondary border-4 rounded"style="height: 370px; background-color: #111418; color: white">
+            <img src="tinder-gold-logo.png" alt="gold">
+            <ul class="fs-5">
+                <li>See Who Likes You</li>
+                <li>New Top Picks every day</li>
+                <li>5 Super Likes a week</li>
+                <li>
+                  1 Free Boost a month Free monthly Boost only available for 1 month
+                  or longer subscriptions.
+                </li>
+                <li>And everything you love from <b>Tinder Plus®</b>!</li>
+            </ul>
+        </div>
+        <div class="container p-2 border border-secondary border-4 rounded"style="height: 370px; background-color: #111418; color: white">
+            <img src="tinder-platinum-logo.png" alt="">
+            <ul class="fs-5">
+                <li>Message before Matching</li>
+                <li>Prioritized Likes</li>
+                <li>See the Likes you’ve sent in the last 7 days</li>
+                <li>And everything you love from <b>Tinder Gold™</b>!</li>
+            </ul>
+        </div> 
+
+    </div>
+
+
+</body>
+</html>
